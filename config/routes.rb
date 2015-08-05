@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :migrations
+  get 'artist/index'
+
+  get 'artist/show'
+
   resources :products
   get 'home/index'
 
@@ -8,7 +13,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   root to: "home#index"
 
-
+  post 'artist/index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

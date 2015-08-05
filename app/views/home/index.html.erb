@@ -4,14 +4,19 @@
   <%= link_to 'Login', new_user_session_path %>
   <%= link_to 'Logout', destroy_user_session_path, method: :delete %></p>
 
-  <h1>Car Market</h1>
+
+
+  <%= form_tag artist_index_path do %>
+    <%= search_field_tag :term %>
+    <%= submit_tag "Go!" %>
+  <% end %>
+
+  <h1>Art Market</h1>
 
 <ul>
   <li class= 'gallery_link'><%= link_to 'Gallery', products_path %></li>
-  <li class= 'gallery_link'>Artist pages</li>
+  <li class= 'gallery_link'><%= link_to 'The Artists', artist_index_path %></li>
 </ul>
-
-
 
 </header>
 
