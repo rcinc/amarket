@@ -137,7 +137,7 @@ div {
     z-index: 1000;
     position: absolute;
     bottom: 10px;
-    left: 0px;
+    left: -20px;
     width: 100%;
     text-align: right;
     opacity: 0;
@@ -149,17 +149,17 @@ div {
 }
 .cb-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 160px;
+    font-size: 120px;
     padding: 0 30px;
     line-height: 120px;
     color: rgba(169,3,41, 0.8);
 }
 .cb-slideshow li:nth-child(1) span {
-  background-image: url("http://thewowstyle.com/wp-content/uploads/2015/01/Black-and-White-Photography-HD-Wallpaper.jpg")
+  background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/595c741d-8228-48fc-b343-7d96e050bb54_zpsqmekw0op.png")
 }
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url("http://mywanderfulworld.com/wp-content/uploads/2015/03/taj-black-and-white-JI-blog-001.jpg");
+    background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/ebd476f2-ddef-48cf-9041-44a807354c43_zpsaepwx4ih.jpg");
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -167,7 +167,7 @@ div {
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url("http://images2.alphacoders.com/152/152152.jpg");
+    background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/image222_zps25gz0vcg.jpg?t=1438731007");
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -175,7 +175,7 @@ div {
     animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-    background-image: url("http://t.wallpaperweb.org/wallpaper/boats/1600x1200/black_and_white_sailboat.jpg");
+    background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/image666_zpszzvugjsf.jpg?t=1438731263");
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -183,7 +183,7 @@ div {
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0-ecUkzAHeSse3MXfhCWrYcn5Bqw4A7l3bys9DK7K_SBxE71c0g");
+    background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/imiage555_zpst8lemf3h.jpg?t=1438731364");
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -191,7 +191,7 @@ div {
     animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(6) span {
-    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrHvEXE8xUcAwv7B8T6qLC8JgPjX9OIRsrDfjd8QQI-kVvCEtl");
+    background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/image111_zpsyb4hivab.jpg?t=1438731536");
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
@@ -253,7 +253,6 @@ div {
 	}
 	100% { opacity: 0 }
 }
-
 @-moz-keyframes imageAnimation {
 	0% {
 	    opacity: 0;

@@ -7,6 +7,11 @@
   <%= link_to 'Logout', destroy_user_session_path, method: :delete %></p>
 
   <h1>Art Market</h1>
+
+  <ul class="Links">
+    <li class= 'gallery_link'><%= link_to 'Gallery', products_path %></li>
+    <li class= 'gallery_link'><%= link_to 'Artist', artist_index_path%></li>
+  </ul>
 </header>
 
 
@@ -14,47 +19,15 @@
 
 
   <ul class="cb-slideshow">
-  	<li>
-  		<span>Image 1</span>
-  		<div>
-  			<h3>Paint</h3>
-  		</div>
-  	</li>
-  	<li>
-      <span>Image 2</span>
-      <div>
-        <h3>Sleep</h3>
-      </div>
-    </li>
-  	<li>
-      <span>Image 3</span>
-      <div>
-        <h3>Eat</h3>
-      </div>
-    </li>
-    <li>
-      <span>Image 4</span>
-        <div>
-          <h3>Talk</h3>
-        </div>
-    </li>
-    <li>
-      <span>Image 5</span>
-      <div>
-        <h3>Sing</h3>
-      </div>
-    </li>
-    <li>
-      <span>Image 6</span>
-      <div>
-        <h3>Dance</h3>
-      </div>
-    </li>
+  	<li><span>Image 1</span><div><h3>@RTMARKET</h3></div></li>
+  	<li><span>Image 2</span><div><h3>CREATE</h3></div></li>
+  	<li><span>Image 3</span><div><h3>DISPLAY</h3></div></li>
+    <li><span>Image 4</span><div><h3>COMMISION</h3></div></li>
+    <li><span>Image 5</span><div><h3>ADVANCE</h3></div></li>
+    <li><span>Image 6</span><div><h3>CONTRIBUTE</h3></div></li>
   </ul>
 
-  <li class= 'gallery_link'><%= link_to 'Gallery', products_path %></li>
-  <li class= 'gallery_link'><%= link_to 'Artist', artist_index_path%></li>
-</ul>
+
 
 </body>
 </html>
