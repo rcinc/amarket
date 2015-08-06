@@ -10,6 +10,80 @@ header {
 
 }
 
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: -175px;
+    right: 500px;
+    list-style: none;
+    z-index:999999;
+    width:721px;
+}
+
+ul#navigation li {
+    width: 103px;
+    display:inline;
+    float:left;
+}
+
+// ul#navigation li a {
+//     display: block;
+//     float: left;
+//     margin-top: -2px;
+//     width: 100px;
+//     height: 25px;
+//     background-color: #E7F2F9;
+//     background-repeat: no-repeat;
+//     background-position: 50% 10px;
+//     border: 1px solid #BDDCEF;
+//     text-decoration: none;
+//     text-align: center;
+//     padding-top: 80px;
+// }
+
+ul#navigation li a {
+    display: block;
+    float:left;
+    margin-top: -2px;
+    width: 100px;
+    height: 25px;
+    background-color: rgba(200, 50, 50, 0.8);
+    background-repeat:no-repeat;
+    background-position:50% 10px;
+    border:0.1px solid black;
+    text-decoration:none;
+    text-align:center;
+    padding-top:80px;
+    box-shadow: 1.5px 1.5px 1.5px black;
+    -moz-border-radius:0px 0px 10px 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-bottom-left-radius: 10px;
+    opacity: 0.7;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+ul#navigation .gallery a{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg/687px-Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg");
+}
+ul#navigation .artists a      {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg");
+  }
+
+ul#navigation li a:hover{
+     background-color: rgba( 255, 20, 20, 0.95);
+}
+
+ul#navigation li a span{
+    letter-spacing:2px;
+    font-size:15px;
+    line-height: 20px;
+    color:#60ACD8;
+    text-shadow: 0 1px 1px #fff;
+}
+
 .gallery_link {
   text-align: center;
   display: inline;
@@ -48,10 +122,6 @@ pre {
 
 a {
   color: #000;
-
-  &:visited {
-    color: #666;
-  }
 
   &:hover {
     color: #fff;
@@ -148,11 +218,12 @@ div {
     animation: titleAnimation 36s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Futura', 'Arial Narrow', Arial, sans-serif;
     font-size: 120px;
     padding: 0 30px;
+    letter-spacing: 6px;
     line-height: 120px;
-    color: rgba(169,3,41, 0.8);
+    color: rgba(139,3,41, 0.75);
 }
 .cb-slideshow li:nth-child(1) span {
   background-image: url("http://i946.photobucket.com/albums/ad303/pkellz6/595c741d-8228-48fc-b343-7d96e050bb54_zpsqmekw0op.png")
@@ -443,172 +514,3 @@ div {
 @media screen and (max-width: 600px) {
 	.cb-slideshow li div h3 { font-size: 50px }
 }
-
-
-
-// .cb-slideshow,
-// .cb-slideshow:after {
-//     position: fixed;
-//     width: 100%;
-//     height: 100%;
-//     top: 0px;
-//     left: 0px;
-//     z-index: -1000;
-// }
-// .cb-slideshow:after {
-//     content: '';
-//     background: transparent url(../images/pattern.png) repeat top left;
-// }
-//
-//
-// .cb-slideshow li span {
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     top: 0px;
-//     left: 0px;
-//     color: transparent;
-//     background-size: cover;
-//     background-position: 50% 50%;
-//     background-repeat: none;
-//     opacity: 0;
-//     z-index: 0;
-//     animation: imageAnimation 36s linear infinite 0s;
-// }
-//
-// .cb-slideshow li div {
-//     z-index: 1000;
-//     position: absolute;
-//     bottom: 30px;
-//     left: 0px;
-//     width: 100%;
-//     text-align: center;
-//     opacity: 0;
-//     color: red;
-//     animation: titleAnimation 36s linear infinite 0s;
-// }
-// .cb-slideshow li div h3 {
-//     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-//     font-size: 240px;
-//     padding: 0;
-//     line-height: -300px;
-// }
-//
-// .cb-slideshow li:nth-child(1) span {
-//     background-image: url("http://thewowstyle.com/wp-content/uploads/2015/01/Black-and-White-Photography-HD-Wallpaper.jpg")
-// }
-// .cb-slideshow li:nth-child(2) span {
-//     background-image: url("http://mywanderfulworld.com/wp-content/uploads/2015/03/taj-black-and-white-JI-blog-001.jpg");
-//     animation-delay: 6s;
-// }
-// .cb-slideshow li:nth-child(3) span {
-//     background-image: url("http://images2.alphacoders.com/152/152152.jpg");
-//     animation-delay: 12s;
-// }
-// .cb-slideshow li:nth-child(4) span {
-//     background-image: url("http://t.wallpaperweb.org/wallpaper/boats/1600x1200/black_and_white_sailboat.jpg");
-//     animation-delay: 18s;
-// }
-// .cb-slideshow li:nth-child(5) span {
-//     background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0-ecUkzAHeSse3MXfhCWrYcn5Bqw4A7l3bys9DK7K_SBxE71c0g");
-//     animation-delay: 24s;
-// }
-// .cb-slideshow li:nth-child(6) span {
-//     background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrHvEXE8xUcAwv7B8T6qLC8JgPjX9OIRsrDfjd8QQI-kVvCEtl");
-//     animation-delay: 30s;
-// }
-//
-// .cb-slideshow li:nth-child(2) div {
-//     animation-delay: 6s;
-// }
-// .cb-slideshow li:nth-child(3) div {
-//     animation-delay: 12s;
-// }
-// .cb-slideshow li:nth-child(4) div {
-//     animation-delay: 18s;
-// }
-// .cb-slideshow li:nth-child(5) div {
-//     animation-delay: 24s;
-// }
-// .cb-slideshow li:nth-child(6) div {
-//     animation-delay: 30s;
-// }
-//
-//
-// @keyframes imageAnimation {
-// 	0% {
-// 	    opacity: 0;
-// 	    animation-timing-function: ease-in;
-// 	}
-// 	8% {
-// 	    opacity: 1;
-// 	    transform: scale(1.05);
-// 	    animation-timing-function: ease-out;
-// 	}
-// 	17% {
-// 	    opacity: 1;
-// 	    transform: scale(1.1) rotate(3deg);
-// 	}
-// 	25% {
-// 	    opacity: 0;
-// 	    transform: scale(1.1) rotate(3deg);
-// 	}
-// 	100% { opacity: 0 }
-// }
-//
-//
-// @keyframes titleAnimation {
-// 	0% {
-// 	    opacity: 0;
-// 	    transform: translateX(200px);
-// 	}
-// 	8% {
-// 	    opacity: 1;
-// 	    transform: translateX(0px);
-// 	}
-// 	17% {
-// 	    opacity: 1;
-// 	    transform: translateX(0px);
-// 	}
-// 	19% {
-// 	    opacity: 0;
-// 	    transform: translateX(-400px);
-// 	}
-// 	25% { opacity: 0 }
-// 	100% { opacity: 0 }
-// }
-//
-// .no-cssanimations .cb-slideshow li span{
-// 	opacity: 1;
-// }
-//
-// @media screen and (max-width: 1140px) {
-//     .cb-slideshow li div h3 { font-size: 140px }
-// }
-// @media screen and (max-width: 600px) {
-//     .cb-slideshow li div h3 { font-size: 80px }
-// }
-//
-// .cb-slideshow li:nth-child(1) span {
-// background-image: url("http://thewowstyle.com/wp-content/uploads/2015/01/Black-and-White-Photography-HD-Wallpaper.jpg");
-// }
-//
-// .cb-slideshow li:nth-child(2) span {
-// background-image: url("http://mywanderfulworld.com/wp-content/uploads/2015/03/taj-black-and-white-JI-blog-001.jpg");
-// }
-//
-// .cb-slideshow li:nth-child(3) span {
-// background-image: url("http://images2.alphacoders.com/152/152152.jpg");
-// }
-//
-// .cb-slideshow li:nth-child(4) span {
-// background-image: url("http://t.wallpaperweb.org/wallpaper/boats/1600x1200/black_and_white_sailboat.jpg");
-// }
-//
-// .cb-slideshow li:nth-child(5) span {
-// background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0-ecUkzAHeSse3MXfhCWrYcn5Bqw4A7l3bys9DK7K_SBxE71c0g");
-// }
-//
-// .cb-slideshow li:nth-child(6) span {
-// background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrHvEXE8xUcAwv7B8T6qLC8JgPjX9OIRsrDfjd8QQI-kVvCEtl");
-// }
