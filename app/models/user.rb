@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :products, :dependent => :destroy
 
+  scope :search, ->(term) { where("email LIKE ?", "%#{term}%")}
+
 end

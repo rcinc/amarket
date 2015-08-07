@@ -7,15 +7,17 @@
 
 
 
-  <p class="login"><%= link_to 'New User', new_user_registration_path %>
-  <% unless user_signed_in? %>
-     <%= link_to 'Login', new_user_session_path %>
-    <% end %>
-  <%= link_to 'Logout', destroy_user_session_path, method: :delete %></p>
+  <p class="login">
+    <%= link_to 'New User', new_user_registration_path %>
+    <% unless user_signed_in? %>
+       <%= link_to 'Login', new_user_session_path %>
+      <% end %>
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+  </p>
 
 
 
-  <%= form_tag artist_index_path do %>
+  <%= form_tag search_path do %>
     <%= search_field_tag :term %>
     <%= submit_tag "Go!" %>
   <% end %>
@@ -25,26 +27,14 @@
  <li class='gallery_link'><a><strong><%= link_to 'Gallery', products_path %></strong><span></span></a></li>
  <li class='gallery_link'><a><strong><%= link_to 'Artist', artist_index_path%></strong><span></span></a></li>
 <li class='logout_link'><a><strong><%= link_to 'New User', new_user_registration_path %></strong><span></span></a></li>
+
 <li class='login_link'><a><strong><%= link_to 'Login', new_user_session_path %></strong><span></span></a></li>
+
 <li class='logout_link'><a><strong><%= link_to 'Logout', destroy_user_session_path, method: :delete %></strong><span></span></a></li>
 
 
 </ul>
 
-  <!-- <p class="login"><%= link_to 'New User', new_user_registration_path %>
-  <%= link_to 'Login', new_user_session_path %>
-  <%= link_to 'Logout', destroy_user_session_path, method: :delete %></p> -->
-
-  <!-- <h1>Art Market</h1>
-
-  <ul class="Links">
-    <li class= 'gallery_link'><%= link_to 'Gallery', products_path %></li>
-    <li class= 'gallery_link'><%= link_to 'Artist', artist_index_path%></li>
-  </ul> -->
-
-
-<!--
-<p class= 'describe'>Welcome to your local art market</p> -->
 
 
   <ul class="cb-slideshow">
