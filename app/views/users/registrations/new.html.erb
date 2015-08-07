@@ -9,12 +9,6 @@
   </div>
 
 
-    <div class="field">
-      <%= f.label :artist %><br />
-      <%= f.check_box :artist %>
-    </div>
-
-
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -27,7 +21,10 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+  <div class="field">
+    <%= f.label :artist %><br />
+    <%= f.check_box :artist %>
+  </div>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
