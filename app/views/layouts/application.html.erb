@@ -12,6 +12,16 @@
 <%= current_user.inspect %>
 <%= user_signed_in?%>
 <br> -->
+<ul id="navigation">
+<li class='gallery_link'><a><strong><%= link_to 'Gallery', products_path %></strong><span></span></a></li>
+<li class='gallery_link'><a><strong><%= link_to 'Artist', artist_index_path%></strong><span></span></a></li>
+<li class='logout_link'><a><strong><%= link_to 'New User', new_user_registration_path %></strong><span></span></a></li>
+<li class='login_link'><a><strong><%= link_to 'Login', new_user_session_path %></strong><span></span></a></li>
+<li class='logout_link'><a><strong><%= link_to 'Logout', destroy_user_session_path, method: :delete %></strong><span></span></a></li>
+
+
+</ul>
+
 <%= yield %>
 
 </body>

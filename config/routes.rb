@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   get 'artist/index'
 
-=======
+
   devise_for :migrations
   get 'artist/index'
 
   get 'artist/show'
 
->>>>>>> testing
+
   resources :products
   get 'home/index'
 
