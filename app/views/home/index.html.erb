@@ -1,11 +1,24 @@
 <html>
 
 <body>
-<header class="header">
 
 
 
 
+
+=======
+  <p class="login"><%= link_to 'New User', new_user_registration_path %>
+  <% unless user_signed_in? %>
+     <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete %></p>
+
+
+
+  <%= form_tag artist_index_path do %>
+    <%= search_field_tag :term %>
+    <%= submit_tag "Go!" %>
+  <% end %>
 
 
   <ul id="navigation">
