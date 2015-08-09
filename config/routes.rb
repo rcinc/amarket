@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
+  root to: "home#index"
+
+
   get 'artist/index'
   post 'artist/index'
+
 
   post '/search' => "home#search"
 
@@ -15,11 +19,10 @@ Rails.application.routes.draw do
   resources :products
   get 'home/index'
 
-  devise_for :users
+  devise_for :users, controllers: { sessions: "users/sessions" }
   devise_for :admins
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  root to: "home#index"
 
 
   # You can have the root of your site routed with "root"

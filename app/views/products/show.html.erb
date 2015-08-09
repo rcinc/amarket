@@ -24,6 +24,7 @@
   <strong>Artist:</strong>
   <%= @product.artist %>
 </p>
-
+<% if current_user.try(:id) == @product.user_id %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
+<% end %>
 <%= link_to 'Back', products_path %>
