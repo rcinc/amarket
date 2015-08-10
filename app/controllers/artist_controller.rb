@@ -7,6 +7,8 @@ class ArtistController < ApplicationController
 
   def show
     @products = Product.all
+    @user = User.all
+    
   end
 
 end

@@ -10,5 +10,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :name
     devise_parameter_sanitizer.for(:account_update) << :name
     devise_parameter_sanitizer.for(:account_update) << :artist
+    devise_parameter_sanitizer.for(:sign_up) << :url
+    devise_parameter_sanitizer.for(:sign_up) << :location
+    devise_parameter_sanitizer.for(:account_update) << :url
+    devise_parameter_sanitizer.for(:account_update) << :location
   end
 end

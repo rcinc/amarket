@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'artist/index'
 
   get 'artist/show'
-
+  get 'users/show' => 'devise/registrations#show'
 
   resources :products
   get 'home/index'

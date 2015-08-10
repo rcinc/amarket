@@ -1,9 +1,11 @@
+<br>
+<br>
 <h1>Featured Artists</h1>
 
 
 <% @users.each do |user| %>
   <% if user.artist? %>
-  <li><%= user.name %><br><%= user.email %></li>
+<br><br><%= image_tag user.url %><br><%= user.name %><br><%= user.location %><br>
 
   <% end %>
   <% end %>

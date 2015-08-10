@@ -12,11 +12,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  GET /resource/edit
+
   def edit
       @products = Products.all
   end
 
+  
   # PUT /resource
   # def update
   #   super

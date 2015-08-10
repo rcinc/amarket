@@ -4,5 +4,6 @@
 </br>
 
 <%  @results.each do |result| %>
-<%= result.email %>
+<%= image_tag result.url %><br>
+<%= link_to result.name, result %>
 <% end %>
